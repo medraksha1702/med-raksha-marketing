@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <style>
       .gradient-bg {
-        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+        background: linear-gradient(135deg, #675dd8 0%, #7367f0 50%, #8f85f3 100%);
       }
       .hero-pattern {
         background-image: none;
@@ -43,6 +43,38 @@
         color: #e0e7ff;
         font-weight: 400;
       }
+      .btn-primary {
+        background-color: #7367f0 !important;
+        border-color: #7367f0 !important;
+      }
+      .btn-primary:hover {
+        background-color: #675dd8 !important;
+        border-color: #675dd8 !important;
+      }
+      .text-primary {
+        color: #7367f0 !important;
+      }
+      .border-primary {
+        border-color: #7367f0 !important;
+      }
+      .bg-primary {
+        background-color: #7367f0 !important;
+      }
+      .bg-primary-light {
+        background-color: #8f85f3 !important;
+      }
+      .bg-primary-dark {
+        background-color: #675dd8 !important;
+      }
+      .hover\:bg-primary:hover {
+        background-color: #7367f0 !important;
+      }
+      .hover\:bg-primary-dark:hover {
+        background-color: #675dd8 !important;
+      }
+      .hover\:text-primary:hover {
+        color: #7367f0 !important;
+      }
     </style>
   </head>
   <body class="bg-gray-50">
@@ -51,15 +83,60 @@
       <div class="max-w-7xl mx-auto px-4">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
-            <i class="fas fa-heartbeat text-3xl text-blue-600 mr-3"></i>
+            <svg
+              width="2.5rem"
+              height="1.71rem"
+              viewBox="0 0 35 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-3"
+            >
+              <!-- Shield Background -->
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.5 2C20.5 2 25.5 3.5 30 4.5C30 8.5 30 14.5 27.5 18.5C25 22.5 17.5 22 17.5 22C17.5 22 10 22.5 7.5 18.5C5 14.5 5 8.5 5 4.5C9.5 3.5 14.5 2 17.5 2Z"
+                fill="#7367F0"
+                opacity="0.9"
+              />
+              <!-- Medical Cross -->
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.5 8H19.5V10H21.5V14H19.5V16H15.5V14H13.5V10H15.5V8Z"
+                fill="white"
+              />
+              <!-- Monitoring Dots - representing connected devices -->
+              <circle cx="12" cy="6" r="1" fill="white" opacity="0.8" />
+              <circle cx="23" cy="6" r="1" fill="white" opacity="0.8" />
+              <circle cx="10" cy="18" r="1" fill="white" opacity="0.8" />
+              <circle cx="25" cy="18" r="1" fill="white" opacity="0.8" />
+              <!-- Connection Lines - subtle tech element -->
+              <path
+                d="M12 7L15.5 9M23 7L19.5 9M10 17L15.5 15M25 17L19.5 15"
+                stroke="white"
+                stroke-width="0.5"
+                opacity="0.6"
+              />
+              <!-- Small heartbeat line at bottom -->
+              <path
+                d="M8 20L10 18L12 20L14 16L17.5 20L21 16L23 20L25 18L27 20"
+                stroke="white"
+                stroke-width="1"
+                fill="none"
+                opacity="0.7"
+              />
+            </svg>
             <span class="text-2xl font-bold text-gray-800">MedRaksha</span>
           </div>
           <div class="hidden md:flex items-center space-x-8">
-            <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
-            <a href="#features" class="text-gray-700 hover:text-blue-600 transition">Features</a>
-            <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition">Gallery</a>
-            <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
-            <a href="#demo" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            <a href="#home" class="text-gray-700 hover:text-primary transition">Home</a>
+            <a href="#features" class="text-gray-700 hover:text-primary transition">Features</a>
+            <a href="#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+            <a
+              href="#demo"
+              class="bg-primary btn-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition"
               >Book Demo</a
             >
           </div>
@@ -78,7 +155,7 @@
         <h1 class="text-7xl font-extrabold mb-8 leading-tight hero-title">
           Revolutionize Your
           <br />
-          <span class="text-cyan-200">Biomedical Equipment</span>
+          <span class="text-purple-200">Biomedical Equipment</span>
           <br />
           Management
         </h1>
@@ -89,14 +166,14 @@
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a
             href="#demo"
-            class="bg-cyan-400 text-gray-900 px-10 py-4 rounded-full font-bold hover:bg-cyan-300 transition-all duration-300 text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+            class="bg-yellow-400 text-gray-900 px-10 py-4 rounded-full font-bold hover:bg-yellow-300 transition-all duration-300 text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
           >
             <i class="fas fa-calendar-check mr-3"></i>
             Book Free Demo
           </a>
           <a
             href="#features"
-            class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-blue-800 transition-all duration-300 text-lg"
+            class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-purple-800 transition-all duration-300 text-lg"
           >
             <i class="fas fa-play mr-3"></i>
             Explore Features
@@ -115,7 +192,7 @@
         <div class="grid md:grid-cols-3 gap-8">
           <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
             <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <i class="fas fa-shield-alt text-2xl text-green-600"></i>
+              <i class="fas fa-shield-alt text-2xl" style="color: #28c76f"></i>
             </div>
             <h3 class="text-xl font-semibold mb-3 text-high-contrast">Enhanced Patient Safety</h3>
             <p class="description-text">
@@ -124,8 +201,8 @@
             </p>
           </div>
           <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
-            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <i class="fas fa-chart-line text-2xl text-blue-600"></i>
+            <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-chart-line text-2xl text-primary"></i>
             </div>
             <h3 class="text-xl font-semibold mb-3 text-high-contrast">Reduced Operational Costs</h3>
             <p class="description-text">
@@ -133,8 +210,8 @@
             </p>
           </div>
           <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
-            <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <i class="fas fa-clipboard-check text-2xl text-purple-600"></i>
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-clipboard-check text-2xl" style="color: #00bad1"></i>
             </div>
             <h3 class="text-xl font-semibold mb-3 text-high-contrast">Regulatory Compliance</h3>
             <p class="description-text">
@@ -154,9 +231,9 @@
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Feature Cards -->
-          <div class="feature-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+          <div class="feature-card bg-white p-6 rounded-lg shadow-md border-l-4 border-primary">
             <div class="flex items-center mb-4">
-              <i class="fas fa-tachometer-alt text-2xl text-blue-600 mr-3"></i>
+              <i class="fas fa-tachometer-alt text-2xl text-primary mr-3"></i>
               <h3 class="text-xl font-semibold text-high-contrast">Real-Time Dashboard</h3>
             </div>
             <p class="description-text">
@@ -166,7 +243,7 @@
           </div>
           <div class="feature-card bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
             <div class="flex items-center mb-4">
-              <i class="fas fa-tools text-2xl text-green-600 mr-3"></i>
+              <i class="fas fa-tools text-2xl mr-3" style="color: #28c76f"></i>
               <h3 class="text-xl font-semibold text-high-contrast">Maintenance Management</h3>
             </div>
             <p class="description-text">
@@ -176,7 +253,7 @@
           </div>
           <div class="feature-card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
             <div class="flex items-center mb-4">
-              <i class="fas fa-building text-2xl text-purple-600 mr-3"></i>
+              <i class="fas fa-building text-2xl text-primary mr-3"></i>
               <h3 class="text-xl font-semibold text-high-contrast">Multi-Organization Support</h3>
             </div>
             <p class="description-text">
@@ -185,7 +262,7 @@
           </div>
           <div class="feature-card bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
             <div class="flex items-center mb-4">
-              <i class="fas fa-users text-2xl text-red-600 mr-3"></i>
+              <i class="fas fa-users text-2xl mr-3" style="color: #ff4c51"></i>
               <h3 class="text-xl font-semibold text-high-contrast">User Management</h3>
             </div>
             <p class="description-text">
@@ -194,7 +271,7 @@
           </div>
           <div class="feature-card bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
             <div class="flex items-center mb-4">
-              <i class="fas fa-file-upload text-2xl text-orange-600 mr-3"></i>
+              <i class="fas fa-file-upload text-2xl mr-3" style="color: #ff9f43"></i>
               <h3 class="text-xl font-semibold text-high-contrast">Bulk Import & Export</h3>
             </div>
             <p class="description-text">
@@ -203,7 +280,7 @@
           </div>
           <div class="feature-card bg-white p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
             <div class="flex items-center mb-4">
-              <i class="fas fa-chart-bar text-2xl text-indigo-600 mr-3"></i>
+              <i class="fas fa-chart-bar text-2xl mr-3" style="color: #00bad1"></i>
               <h3 class="text-xl font-semibold text-high-contrast">Advanced Analytics</h3>
             </div>
             <p class="description-text">
@@ -325,29 +402,40 @@
           <!-- Demo Form -->
           <div class="bg-white rounded-lg shadow-lg p-8">
             <div class="text-center mb-6">
-              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-calendar-check text-2xl text-blue-600"></i>
+              <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-calendar-check text-2xl text-primary"></i>
               </div>
               <h3 class="text-2xl font-bold text-high-contrast mb-2">Schedule Your Free Demo</h3>
-              <p class="text-sm text-blue-600 font-semibold">✓ No commitment required • ✓ 30-minute session • ✓ Instant scheduling</p>
+              <p class="text-sm text-primary font-semibold">
+                ✓ No commitment required • ✓ 30-minute session • ✓ Instant scheduling
+              </p>
             </div>
 
             <div class="bg-gray-50 rounded-lg p-6 mb-6">
               <h4 class="font-semibold text-high-contrast mb-3 flex items-center">
-                <i class="fas fa-clock text-blue-600 mr-2"></i>
+                <i class="fas fa-clock text-primary mr-2"></i>
                 What happens next?
               </h4>
               <div class="space-y-2 text-sm description-text">
                 <div class="flex items-center">
-                  <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3">1</span>
+                  <span
+                    class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3"
+                    >1</span
+                  >
                   Fill out our 2-minute demo request form
                 </div>
                 <div class="flex items-center">
-                  <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3">2</span>
+                  <span
+                    class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3"
+                    >2</span
+                  >
                   We'll contact you within 2 hours
                 </div>
                 <div class="flex items-center">
-                  <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3">3</span>
+                  <span
+                    class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3"
+                    >3</span
+                  >
                   Schedule your personalized demo at your convenience
                 </div>
               </div>
@@ -357,7 +445,7 @@
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLScApDNmasbEcxbwXgvwxzbGcXhOfOaMo032Vosv3pjtl88k9w/viewform?usp=dialog"
                 target="_blank"
-                class="bg-blue-600 text-white px-10 py-4 rounded-lg font-bold hover:bg-blue-700 transition-all duration-300 inline-block text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-4"
+                class="bg-primary text-white px-10 py-4 rounded-lg font-bold hover:bg-purple-700 transition-all duration-300 inline-block text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-4"
               >
                 <i class="fas fa-external-link-alt mr-2"></i>
                 Get My Free Demo Now
@@ -372,7 +460,8 @@
                 <div class="flex items-center">
                   <i class="fas fa-star text-yellow-500 mr-2"></i>
                   <p class="text-sm text-gray-700 font-medium">
-                    <strong>Popular time slots fill up fast!</strong> Book your demo today to secure your preferred time.
+                    <strong>Popular time slots fill up fast!</strong> Book your demo today to secure your preferred
+                    time.
                   </p>
                 </div>
               </div>
@@ -410,12 +499,14 @@
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white">
+            <div class="bg-gradient-to-r from-primary to-purple-600 rounded-lg p-8 text-white">
               <h3 class="text-2xl font-bold mb-4">Need More Information?</h3>
-              <p class="mb-6 text-blue-100">Have questions? Send us an email and we'll get back to you within 2 hours.</p>
+              <p class="mb-6 text-purple-100">
+                Have questions? Send us an email and we'll get back to you within 2 hours.
+              </p>
               <a
                 href="mailto:medraksha1702@gmail.com"
-                class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+                class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
               >
                 <i class="fas fa-envelope mr-2"></i>
                 Email Us Now
@@ -437,14 +528,14 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#demo"
-            class="bg-yellow-400 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition"
+            class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition"
           >
             <i class="fas fa-rocket mr-2"></i>
             Start Free Trial
           </a>
           <a
             href="mailto:medraksha1702@gmail.com"
-            class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition"
+            class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition"
           >
             <i class="fas fa-envelope mr-2"></i>
             Contact Sales
@@ -459,7 +550,50 @@
         <div class="grid md:grid-cols-4 gap-8">
           <div>
             <div class="flex items-center mb-4">
-              <i class="fas fa-heartbeat text-2xl text-blue-400 mr-2"></i>
+              <svg
+                width="2rem"
+                height="1.37rem"
+                viewBox="0 0 35 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-2"
+              >
+                <!-- Shield Background -->
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.5 2C20.5 2 25.5 3.5 30 4.5C30 8.5 30 14.5 27.5 18.5C25 22.5 17.5 22 17.5 22C17.5 22 10 22.5 7.5 18.5C5 14.5 5 8.5 5 4.5C9.5 3.5 14.5 2 17.5 2Z"
+                  fill="#8F85F3"
+                  opacity="0.9"
+                />
+                <!-- Medical Cross -->
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5 8H19.5V10H21.5V14H19.5V16H15.5V14H13.5V10H15.5V8Z"
+                  fill="white"
+                />
+                <!-- Monitoring Dots - representing connected devices -->
+                <circle cx="12" cy="6" r="1" fill="white" opacity="0.8" />
+                <circle cx="23" cy="6" r="1" fill="white" opacity="0.8" />
+                <circle cx="10" cy="18" r="1" fill="white" opacity="0.8" />
+                <circle cx="25" cy="18" r="1" fill="white" opacity="0.8" />
+                <!-- Connection Lines - subtle tech element -->
+                <path
+                  d="M12 7L15.5 9M23 7L19.5 9M10 17L15.5 15M25 17L19.5 15"
+                  stroke="white"
+                  stroke-width="0.5"
+                  opacity="0.6"
+                />
+                <!-- Small heartbeat line at bottom -->
+                <path
+                  d="M8 20L10 18L12 20L14 16L17.5 20L21 16L23 20L25 18L27 20"
+                  stroke="white"
+                  stroke-width="1"
+                  fill="none"
+                  opacity="0.7"
+                />
+              </svg>
               <span class="text-xl font-bold">MedRaksha</span>
             </div>
             <p class="text-gray-400">Revolutionizing biomedical equipment management for healthcare excellence.</p>
